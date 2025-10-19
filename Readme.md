@@ -1,0 +1,1 @@
+#nodemon is used to restart the server when a file is saved or modified
