@@ -5,3 +5,5 @@ Always connect to database using try catch block. and always use async and await
 app.use(cors()) : when we use middlewares or configuration settings
 
 middleware : checking if user is logged in is an example of middleware
+
+

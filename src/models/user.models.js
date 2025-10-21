@@ -53,7 +53,7 @@ const userSchema = new mongoose.Schema(
 // to encrypt password before saving
 // value of this doesnt work in an arrow or callback function.
 
-userSchema.pre("save", async function (next) {
+userSchema.pre("save", async function (next) { 
   if (!this.isModified("password")) return next();
 
   this.password = bcrypt.hash(this.password, 10);
@@ -90,3 +90,5 @@ userSchema.methods.generateRefreshToken = function(){
     )
 }
 export const User = mongoose.model("User", userSchema);
+
+

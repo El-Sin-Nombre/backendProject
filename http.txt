@@ -1,0 +1,41 @@
+HTTP : no encrytion
+HTTPS : ecryption
+
+What are Http headers : Key-value sent along with request and response (metadata).
+
+Caching, authentication, manage state
+
+request headers - from client
+reponse headers - from server
+Representation headers - encoding/compression
+payload headers - data
+
+HTTP methods : Basic set of operations that can be used to interact with server.
+GET : Retrieve a resourse
+POST : Interact with resource (mostly add)
+PUT : replace a resorce.
+PATCH : change part of resource.
+DELETE : remove a resource.
+HEAD : No message body (respone headers only)
+OPTIONS : What operations are available
+TRACE : loopback test(get some data).
+
+HTTP Status code : 
+1xx : Informational
+2xx : Success
+3xx : Redirection
+4xx : Client error
+5xx : Server error
+
+100 continue   
+102 processing
+200 Ok
+202 accepted
+307 temporary redirected
+308 permanent redirected
+400 bad request401 unauthorized
+402 payment required
+404 Not found
+500 internal server error
+504 gateway time out
+
