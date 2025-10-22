@@ -25,4 +25,12 @@ app.use(express.static("public")); // This means files inside 'public' can be ac
 // It makes cookies available in 'req.cookies' for easy access in routes or middleware
 app.use(cookieParser());
 
+// routes import
+import userRouter from './routes/user.routes.js'
+
+
+
+// routes declaration.
+app.use('/api/v1/users', userRouter)
+
 export { app };
