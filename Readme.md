@@ -7,3 +7,6 @@ app.use(cors()) : when we use middlewares or configuration settings
 middleware : checking if user is logged in is an example of middleware
 
 
+Access Token :  short lived, Used for authentication till its lifetime
+
+Refresh Token : long lived, Used for login sessions.
